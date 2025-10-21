@@ -4,11 +4,9 @@
              x:Class="LabTask2UI.MainPage"
              BackgroundColor="White">
 
-    <!-- 整个页面可滚动 -->
     <ScrollView>
         <Grid RowSpacing="0">
 
-            <!-- 定义行结构 -->
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <!-- Header -->
@@ -22,7 +20,6 @@
                 <!-- Buttons -->
             </Grid.RowDefinitions>
 
-            <!-- 顶部名字与ID -->
             <StackLayout Grid.Row="0" BackgroundColor="#4A148C" Padding="20,50,20,20">
                 <Label Text="Wong Sing Yaw  |  BCS23090010"
                        FontSize="18"
@@ -31,13 +28,11 @@
                        TextColor="White"/>
             </StackLayout>
 
-            <!-- 狗狗图片 -->
             <Image Grid.Row="1"
                    Source="image7.png"
                    Aspect="AspectFill"
                    HeightRequest="220" />
 
-            <!-- 狗狗资料卡 -->
             <Frame Grid.Row="2"
                    Margin="20,-30,20,0"
                    BackgroundColor="#FFF4E0"
@@ -56,20 +51,17 @@
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
 
-                    <!-- 狗狗名字 -->
                     <Label Grid.Row="0" Grid.Column="0"
                            Text="Urh?"
                            FontSize="26"
                            FontAttributes="Bold"
                            TextColor="Black"/>
 
-                    <!-- 性别图标 -->
                     <Image Grid.Row="0" Grid.Column="1"
                            Source="symbolmale.png"
                            WidthRequest="26" HeightRequest="26"
                            VerticalOptions="Center"/>
 
-                    <!-- 狗狗种类与年龄 -->
                     <StackLayout Grid.Row="1" Grid.Column="0" Orientation="Horizontal" Spacing="8">
                         <Label Text="Dog"
                                FontSize="18"
@@ -80,7 +72,6 @@
                         </StackLayout>
                     </StackLayout>
 
-                    <!-- 地址 -->
                     <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" Spacing="8" Margin="0,5,0,0">
                         <Image Source="location.png" WidthRequest="18" HeightRequest="18" VerticalOptions="Center"/>
                         <Label Text="3B, Lorong 88, Taman Rantau Panjang, 96000 Sibu, Sarawak"
@@ -91,7 +82,6 @@
                 </Grid>
             </Frame>
 
-            <!-- 主人资料 -->
             <Grid Grid.Row="3" Padding="20,15,20,0" ColumnSpacing="10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
@@ -99,7 +89,6 @@
                     <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
 
-                <!-- 主人头像 -->
                 <Image Grid.Column="0"
                        Source="image6.jpg"
                        HeightRequest="55"
@@ -110,7 +99,6 @@
                     </Image.Clip>
                 </Image>
 
-                <!-- 主人名字 -->
                 <VerticalStackLayout Grid.Column="1" VerticalOptions="Center">
                     <Label Text="Ali bin Abubaka"
                            FontSize="16"
@@ -121,7 +109,6 @@
                            TextColor="Gray"/>
                 </VerticalStackLayout>
 
-                <!-- 日期 -->
                 <Label Grid.Column="2"
                        Text="1.11.2024"
                        FontSize="12"
@@ -129,7 +116,6 @@
                        VerticalOptions="Center"/>
             </Grid>
 
-            <!-- 狗狗简介与按钮 -->
             <VerticalStackLayout Grid.Row="4" Padding="20,10,20,20" Spacing="15">
                 <Label Text="Hi! Urh? ah? Your name’s Urh? Bro, that sounds like a loading screen noise"
                        FontSize="14"
